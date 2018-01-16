@@ -1,4 +1,4 @@
-/var Dancer = function(top, left, timeBetweenSteps) {
+var Dancer = function(top, left, timeBetweenSteps) {
 
  //var dancer = {};
 
