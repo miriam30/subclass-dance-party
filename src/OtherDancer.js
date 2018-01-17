@@ -1,5 +1,6 @@
 var OtherDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass("OtherDancer")
   };
   OtherDancer.prototype = Object.create(Dancer.prototype);
   OtherDancer.prototype.constructor = OtherDancer;
@@ -12,31 +13,3 @@ var OtherDancer = function(top, left, timeBetweenSteps) {
    // other effects you can use on a jQuery-wrapped html tag.
    this.$node.toggle();
   };
-
-
-
-};
-
-//  this.timeBetweenSteps = timeBetweenSteps;
-//  this.$node = $('<span class="otherDancer"></span>');
-//
-//  this.step();
-//
-//  this.setPosition(top, left);
-//
-//
-// };
-//
-// Dancer.prototype.step = function() {
-//
-//
-//  setTimeout(this.step.bind(this), this.timeBetweenSteps);
-// };
-//
-// Dancer.prototype.setPosition = function(top, left) {
-//  var styleSettings = {
-//    top: top,
-//    left: left
-//  };
-//  this.$node.css(styleSettings);
-// };
